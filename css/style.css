@@ -22,10 +22,13 @@ dt {
     font-weight: bold;
     color:white;
     width: 50%;
+    height: 1.5em;
 }
 
 dd {
-   
+   border-left: 10px solid lightskyblue;
+   padding-left: 2px;
+   margin-bottom: 25px;
 }
 
 dl code {
@@ -38,3 +41,32 @@ dl code {
     font-style: italic;
 }
 
+
+/* style encadré  */
+
+.encadre {
+    width: 60%;
+    background-color: white;    
+    border: 5px solid orange;   
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+
+abbr {
+    /* border-bottom: 2px dotted orange; */
+    letter-spacing: 5px;
+}
+
+.texte_gras {
+    font-weight: 900;
+}
+
+blockquote {
+
+    background-color: lightskyblue;
+    text-indent: 20px;
+    padding: 5px;
+
+}
