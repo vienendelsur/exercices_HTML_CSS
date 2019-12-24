@@ -5,6 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Découpage de page</title>
+    <link rel="stylesheet" href="style_02.css">
+    <style>
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dddddd;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+}
+    </style>
 </head>
 
 <body>
@@ -21,13 +40,14 @@
                 <li><a href="#">Qui sommes-nous ?</a></li>
                 <li><a href="#">Ce que nous faisons</a></li>
                 <li><a href="#">Contact</a></li>
+                <li style="float:right"><form action="#">
+                <input type="search" name="cherche" placeholder="Recherchez">
+                <input type="submit" value="ok">
+            </form></li>
             </ul>
             <!-- une barre de recherche est un outil de navigation dans le site ; il est non linéaire (contrairement à la ul ) -->
             <!-- le formulaire de recherche du site  -->
-            <form action="#">
-                <input type="search" name="cherche" placeholder="Recherchez">
-                <input type="submit" value="ok">
-            </form>
+            
         </nav> 
     </header>
 
