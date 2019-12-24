@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tableaux HTML</title>
+
+    <style>
+    /* les styles pour la liste  */
+        dl {
+            background-color: lightcyan;
+        }
+        
+        dt {
+            font-weight: bold;
+        }
+
+        dd {
+            font-style: italic;
+        }
+
+        /* les styles pour les tableaux  */
+
+        table {
+            font-family:Arial, Helvetica, sans-serif;
+            width: 80%;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid blue;
+            text-align: left;
+            padding: 8px;
+        }
+        /* even pair, odd impair  */
+        tr:nth-child(even) {
+            background-color:lightyellow;
+        }
+
+        caption {
+            border: 2px solid blue;
+            padding: 16px;
+            background-color:lightskyblue;
+            font-weight: bolder;
+
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Des tableaux et une liste de définition</h1>
+    <h2>Liste de termes et leur définition</h2>
+    <dl>
+        <dt>Vacances</dt>
+            <dd>Période de congés des personnes en activité.</dd>
+        <dt>Travail</dt>
+            <dd>Activité humaine organisée et utile. Ensemble de ces activités.</dd>
+    </dl>
+
+    <hr>
+
+    <h2>Des tableaux</h2>
+
+    <!-- table>tr*6>td*3  -->
+
+    <table>
+        <caption>Les plus belles cie du monde</caption>
+        <tr>
+            <th>Compagnie</th>
+            <th>Contact</th>
+            <th>Pays</th>
+            <th>Téléphone</th>
+        </tr>
+        <tr>
+            <td>Auchan</td>
+            <td>M<sup>me</sup> Auchan</td>
+            <td>France</td>
+            <td>06 63 74 11 35</td>
+        </tr>
+        <tr>
+            <td>Carrefour</td>
+            <td>M. Carrefour</td>
+            <td>France</td>
+            <td>06 56 56 59 58</td>
+        </tr>
+        <tr>
+            <td>Lidl</td>
+            <td>Frau Lidl</td>
+            <td>Allemagne</td>
+            <td>33 5 263 598</td>
+        </tr>
+        <tr>
+            <td>Leclerc</td>
+            <td>M. Le Couennec</td>
+            <td>Bretagne</td>
+            <td>
+                <ul>
+                    <li>75 05 23</li>
+                    <li>75 02 03</li>
+                    <li></li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><a href="https://www.picard.fr/" title="le site de Picard" target="_blank">Picard</a></td>
+            <td>M. Picard</td>
+            <td>France</td>
+            <td>00 00 00 00 00</td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Un tableau avec fusion de colonnes</h2>
+
+    <table>
+        <!-- tr*2>td*3 -->
+        <!-- colspan fusion de colonnes  -->
+        <tr>
+            <th>Nom</th>
+            <th colspan="2">Courriel</th>          
+        </tr>
+        <tr>
+            <td>Père Noël</td>
+            <td><a href="mailto:papanoel@polenord.pn">papanoel@polenord.pn</a></td>
+            <td><a href="mailto:santa-claus@noel.fr">santa-claus@noel.fr</a></td>
+        </tr>
+    </table>
+
+    <hr>
+    <h2>Un tableau avec fusion de rangées</h2>
+
+    <!-- table>tr*3>td*2 -->
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Bill Gates</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Téléphone</td>
+            <td>06 56 59 58 54 </td>
+        </tr>
+        <tr>
+            <td>04 54 58 59 56</td>
+            
+        </tr>
+        <tr>
+            <td>04 54 58 59 56</td>
+            
+        </tr>
+    </table>
+<br><br><br><br><br><br><br>
+<!-- table>tr*2>td*2  -->
+</body>
+</html>
